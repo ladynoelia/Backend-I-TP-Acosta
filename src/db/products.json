@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "title": "Fushigidane",
+    "description": "Aprox. Size: D: 20 cm, A: 16 cm, H: 16 cm",
+    "code": "",
+    "price": 5000,
+    "status": true,
+    "stock": 5,
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": [
+      "./src/assets/images/products/pokemon/001-1.png",
+      "./src/assets/images/products/pokemon/001-2.png",
+      "./src/assets/images/products/pokemon/001-3.png"
+    ]
+  },
+  {
+    "id": "5a2d7fc4-7f8e-483c-9976-25baeb47a378",
+    "title": "Camisa azul rayada",
+    "price": 6500,
+    "stock": 5
+  },
+  {
+    "id": "08c570d3-ca91-4c84-a51d-b5902ae06a4d",
+    "title": "Camisa",
+    "price": 4520,
+    "stock": 5
+  },
+  {
+    "id": "d5c1aa26-598d-42e9-9506-5b81d8fa21f0",
+    "title": "Camisa",
+    "price": 4520,
+    "stock": 5
+  }
+]
