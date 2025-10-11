@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "id": "f40648ad-9748-47d8-8698-9dc7216b2045",
+    "products": []
+  },
+  {
+    "id": "f40648ad-9748-47d8-8698-9dc7216b2045",
+    "products": [],
+    "addProduct": {
+      "id": "1",
+      "title": "Fushigidane",
+      "description": "Aprox. Size: D: 20 cm, A: 16 cm, H: 16 cm",
+      "code": "",
+      "price": 5000,
+      "status": true,
+      "stock": 5,
+      "category": "Sekiguchi Pokemon",
+      "thumbnail": [
+        "./src/assets/images/products/pokemon/001-1.png",
+        "./src/assets/images/products/pokemon/001-2.png",
+        "./src/assets/images/products/pokemon/001-3.png"
+      ]
+    }
+  },
+  {
+    "id": "884e2bd4-c2c8-43ed-bc1c-a67994aaf424",
+    "products": []
+  }
+]

@@ -9,6 +9,7 @@ app.get("/", (req, res) => {
   res.json({ status: "Éxito!", message: "Hello!" });
 });
 
+// ----------- ProductManager -----------
 // Obtener todos los productos
 app.get("/api/products", async (req, res) => {
   try {
@@ -68,4 +69,5 @@ app.listen(8080, () => {
   console.log("servidor iniciado! xD");
 });
 
+// ----------- CartManager -----------
 // node src/app.js
