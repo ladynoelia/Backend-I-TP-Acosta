@@ -5,31 +5,65 @@
     "description": "Aprox. Size: D: 20 cm, A: 16 cm, H: 16 cm",
     "code": "",
     "price": 5000,
-    "status": true,
-    "stock": 5,
+    "status": false,
+    "stock": 9,
     "category": "Sekiguchi Pokemon",
     "thumbnail": [
-      "./src/assets/images/products/pokemon/001-1.png",
-      "./src/assets/images/products/pokemon/001-2.png",
-      "./src/assets/images/products/pokemon/001-3.png"
+      "./public/images/products/pokemon/001-1.png",
+      "./public/images/products/pokemon/001-2.png",
+      "./public/images/products/pokemon/001-3.png"
     ]
   },
   {
     "id": "5a2d7fc4-7f8e-483c-9976-25baeb47a378",
-    "title": "Camisa azul rayada",
-    "price": 6500,
-    "stock": 5
+    "title": "Camisa a rayas",
+    "price": 7500,
+    "stock": 8,
+    "category": "Vestimenta femenina"
   },
   {
-    "id": "08c570d3-ca91-4c84-a51d-b5902ae06a4d",
-    "title": "Camisa",
-    "price": 4520,
-    "stock": 5
+    "id": "4bca6f61-d1ec-4c51-9e94-dbc6312861f1",
+    "title": "Hitokage",
+    "description": "Aprox. Size: L: 14 cm, A: 12.7 cm, H: 17.80 cm",
+    "code": "",
+    "price": 4000,
+    "status": true,
+    "stock": 6,
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": [
+      "./public/images/products/pokemon/004-1.png",
+      "./public/images/products/pokemon/004-2.jpg",
+      "./public/images/products/pokemon/004-3.jpg"
+    ]
   },
   {
-    "id": "d5c1aa26-598d-42e9-9506-5b81d8fa21f0",
-    "title": "Camisa",
-    "price": 4520,
-    "stock": 5
+    "id": "8f803411-3884-4013-ad14-2e3d4b9dc54f",
+    "title": "Zenigane",
+    "description": "Aprox. Size: L: 15.24 cm, A: 10.16 cm, H: 17.80 cm",
+    "code": "",
+    "price": 4000,
+    "status": true,
+    "stock": 20,
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": [
+      "./public/images/products/pokemon/007-1.jpeg",
+      "./public/images/products/pokemon/007-2.jpg",
+      "./public/images/products/pokemon/007-3.jpg"
+    ]
+  },
+  {
+    "id": "751801ab-1218-4ec9-ba9f-8c97b0b86c39",
+    "title": "Zeniganes",
+    "description": "Aprox. Size: L: 15.24 cm, A: 10.16 cm, H: 17.80 cm",
+    "code": "",
+    "price": 4000,
+    "status": true,
+    "stock": 20,
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": [
+      "./public/images/products/pokemon/007-1.jpeg",
+      "./public/images/products/pokemon/007-2.jpg",
+      "./public/images/products/pokemon/007-3.jpg"
+    ]
   }
 ]
