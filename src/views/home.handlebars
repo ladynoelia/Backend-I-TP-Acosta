@@ -1,15 +1,23 @@
 <div>
-  <h1>Main</h1>
-  {{#each products}}
-    <li>
-      {{#each this.thumbnail}}
-        <img src="{{this}}" alt="" />
-      {{/each}}
-      <h2>{{this.title}}</h2>
-      <h3>Precio: ${{this.price}}</h3>
-      <h3>Categoria: {{this.category}}</h3>
-      <h3>Descripción: {{this.description}}</h3>
-      <h3>Stock: {{this.stock}}</h3>
-    </li>
-  {{/each}}
+  <h1 class="text-center">¡Bienvenidos a FuwaFawa Paradise!</h1>
+  <div class="main">
+    {{#each products}}
+      <div class="col">
+        <div class="card h-100" card>
+          <img
+            src="{{this.thumbnail}}"
+            class="card-img-top"
+            alt="{{this.title}}"
+          />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">{{this.title}}</h5>
+            <p class="card-text">Precio: ${{this.price}}</p>
+            <p class="card-text">Categoria: {{this.category}}</p>
+            <p class="card-text">Descripción: {{this.description}}</p>
+            <p class="card-text">Stock: {{this.stock}}</p>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
 </div>

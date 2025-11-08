@@ -11,13 +11,6 @@
     "thumbnail": "./images/products/001-1.png"
   },
   {
-    "id": "5a2d7fc4-7f8e-483c-9976-25baeb47a378",
-    "title": "Camisa a rayas",
-    "price": 7500,
-    "stock": 8,
-    "category": "Vestimenta femenina"
-  },
-  {
     "id": "4bca6f61-d1ec-4c51-9e94-dbc6312861f1",
     "title": "Hitokage",
     "description": "Aprox. Size: L: 14 cm, A: 12.7 cm, H: 17.80 cm",
@@ -40,69 +33,47 @@
     "thumbnail": "./images/products/007-1.jpeg"
   },
   {
-    "id": "d42d2c32-d1fc-4edf-a04c-0d0a8e54f8d4",
-    "title": "aa",
-    "description": "aaaaa",
-    "code": "sdf334",
-    "price": "1800",
+    "id": "31fca2bc-b1f2-41db-9e10-1e69341572b2",
+    "title": "Pikachu",
+    "description": "Aprox. Size: L: 17.50 cm, A: 10.50 cm, H: 22.50 cm",
+    "code": "25",
+    "price": "4000",
     "status": "true",
-    "stock": "2",
-    "category": "asddff",
-    "thumbnail": ""
+    "stock": "4",
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": "./images/products/1762624601294-025-2.jpg"
   },
   {
-    "id": "3618a31d-39e3-4c1a-8171-2f19b687dd85",
-    "title": "Candela",
-    "description": "preciosa",
-    "code": "sdf334",
-    "price": "12342343554",
-    "status": "true",
-    "stock": "1",
-    "category": "asddff",
-    "thumbnail": "./images/products/1761666946494-WhatsApp Image 2025-06-09 at 5.32.17 PM (1).jpeg"
-  },
-  {
-    "id": "aeb195ac-0893-433d-93ac-db295de35026",
-    "title": "Zubora Yoga",
-    "description": "Libro",
-    "code": "123dsa",
-    "price": "1520",
+    "id": "fb23b7d1-4659-4783-b70f-1ee6c0a53eec",
+    "title": "Nyaasu",
+    "description": "Aprox. Size: L: 12 cm, A: 14 cm, H: 20 cm",
+    "code": "52",
+    "price": "4000",
     "status": "true",
     "stock": "5",
-    "category": "Libros",
-    "thumbnail": "./images/products/1761681188562-Genki na hetare.jpg"
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": "./images/products/1762624703720-052-1.jpg"
   },
   {
-    "id": "b234d5cb-f344-465e-92e3-145527fa366e",
-    "title": "Mamá",
-    "description": "Zubora",
-    "code": "123dsaw",
-    "price": "123400",
+    "id": "dba21236-8db9-45a0-9a93-33f14e965efe",
+    "title": "Koduck",
+    "description": "Aprox. Size: L: 18 cm, A: 20 cm, H: 19 cm",
+    "code": "54",
+    "price": "5000",
     "status": "true",
-    "stock": "1",
-    "category": "Unknown",
-    "thumbnail": "./images/products/1762551793476-asd.webp"
+    "stock": "5",
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": "./images/products/1762626096653-054-1.jpg"
   },
   {
-    "id": "b4abf774-d0d5-464f-b5ed-c27e1caa4b42",
-    "title": "lala",
-    "description": "ASDF",
-    "code": "123dsaw",
-    "price": "8000",
+    "id": "402307cc-db3e-4c31-972f-4b5286bb461f",
+    "title": "Gengah",
+    "description": "Aprox. Size: H: 19.05 cm",
+    "code": "94",
+    "price": "4250",
     "status": "true",
-    "stock": "3",
-    "category": "Libros",
-    "thumbnail": "./images/products/1762557485674-WhatsApp Image 2025-06-09 at 5.32.17 PM (1).jpeg"
-  },
-  {
-    "id": "e51482b2-99f6-4221-a3f2-6c5ba65ba1f7",
-    "title": "sadfsadf",
-    "description": "aaaaa",
-    "code": "dfg",
-    "price": "2345",
-    "status": "true",
-    "stock": "2",
-    "category": "dg",
-    "thumbnail": "./images/products/1762614623509-371823092_682181677293997_8267550480421194539_n.jpg"
+    "stock": "10",
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": "./images/products/1762626174301-094-1.jpg"
   }
 ]

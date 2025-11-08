@@ -2,16 +2,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
-    {{! <link
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
-    /> }}
+    />
     <title>FuwaFuwa Paradise 2.0</title>
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./images/icons/welcome.png"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <Link to="/">FuwaFawa</Link>
+          {{!  ---------- Desplegable de Productos ---------  }}
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Productos
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <Link class="dropdown-item" to="/product1">
+                    Sekiguchi Pokemon
+                  </Link>
+                </li>
+                <li>
+                  <Link class="dropdown-item" to="/product2">
+                    Digimon Adventure: Plush
+                  </Link>
+                </li>
+                <li>
+                  <Link class="dropdown-item" to="/product3">
+                    Digimon Adventure: Stuffed Collection
+                  </Link>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          {{!  ---------- Carrito ---------  }}
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
     {{{body}}}
+    <footer>
+      <div class="footer main">
+        <div class="nav-footer">
+          <ul>
+            <li>
+              <a href="#">Preguntas frecuentes</a>
+            </li>
+            <li>
+              <a href="#">Cambios y devoluciones</a>
+            </li>
+            <li>
+              <a href="#">Términos y condiciones</a>
+            </li>
+            <li>
+              <a href="#">Botón de arrepentimiento</a>
+            </li>
+          </ul>
+        </div>
+        <div class="info-inf">
+          <p class="info-inf-izq">
+            FuwaFuwa Paradise © 2025 Todos los derechos reservados
+          </p>
+          <div class="contacto">
+            <ul>
+              <li>
+                <img src="./images/icons/direccion.png" alt="icono direccion" />
+                Azul, Buenos Aires, Argentina
+              </li>
+              <li>
+                <img src="./images/icons/telefono.png" alt="icono telefono" />
+                +549 2281 xx xxxx
+              </li>
+              <li>
+                <img src="./images/icons/mail.png" alt="icono mail" />
+                info.fuwa@asdf.com.ar
+              </li>
+            </ul>
+          </div>
+          <div class="info-inf-der">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                  <img src="./images/social/facebook.png" alt="Facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <img src="./images/social/instagram.png" alt="Instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/?lang=es&mx=2" target="_blank">
+                  <img src="./images/social/x.png" alt="X" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

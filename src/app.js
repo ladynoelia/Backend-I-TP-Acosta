@@ -3,8 +3,6 @@ import http from "http";
 import { engine } from "express-handlebars";
 import { Server } from "socket.io";
 import viewsRouter from "./routes/views.router.js";
-
-//import CartManager from "./managers/cartManager.js";
 import productsRouter from "./routes/products.router.js";
 import cartsRouter from "./routes/carts.router.js";
 import ProductManager from "./managers/productManager.js";
@@ -16,12 +14,6 @@ const server = http.createServer(app);
 app.use(express.json());
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
-
-//const cartManager = new CartManager("./src/db/carts.json");
-
-/* app.get("/", (req, res) => {
-  res.json({ status: "Éxito!", message: "Hello!" });
-}); */
 
 // ----------- Handlebars -----------
 app.engine("handlebars", engine());
@@ -48,12 +40,6 @@ io.on("connection", async (socket) => {
   //Manda los productos en la base de datos
   const productsData = await productManager.getProducts();
   io.emit("Products data", productsData);
-
-  /* //Recibe los datos y agrega un producto nuevo
-  socket.on("New Product", async (newProduct) => {
-    console.log("Producto agregado:", newProduct);
-    await productManager.addProduct(newProduct);
-  }); */
 });
 // node src/app.js
 server.listen(8080, () => {

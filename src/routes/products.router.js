@@ -59,7 +59,7 @@ productsRouter.post("/", uploader.single("file"), async (req, res) => {
     });
     const updatedProducts = await productManager.getProducts();
     req.io.emit("Products data", updatedProducts);
-    res.redirect("/realtimeproducts");
+    res.status(201).json({ message: "Producto agregado correctamente" });
   } catch (error) {
     res.status(400).json({ message: error.message });
   }

@@ -1,4 +1,275 @@
-body {
-  color: antiquewhite;
-  background-color: rgb(37, 37, 37);
+/* Colors
+Fondos: #f2ecdf,
+Textos: #6c6e72
+Naranja: #ffc89e
+Rosa: #f3b5ba
+Rojo: #df9ab3
+Violeta: #9a97cf
+Verde: #a9d3c9 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f2ecdf;
+}
+
+h1 {
+  padding: 10px;
+  color: #9a97cf;
+}
+h3 {
+  color: #6c6e72;
+}
+
+/* ------------------- NavBar ------------------- */
+.navbar {
+  border-radius: 5px;
+  width: 70%;
+  justify-content: center;
+  margin: auto;
+}
+.navbar a {
+  color: #9a97cf;
+}
+.btn-cart {
+  color: #9a97cf;
+}
+/* ------------------- Home ------------------- */
+.carousel .card-body {
+  text-align: center;
+  padding: 8px;
+}
+.carousel img {
+  object-fit: cover;
+  border-radius: 5px;
+}
+.card-title {
+  color: #6c6e72;
+}
+/* ------------------- ItemListContainer ------------------- */
+.row {
+  margin: 0.5em;
+}
+.text-center {
+  color: #6c6e72;
+}
+/* ------------------- Tarjetas de productos ------------------- */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card h5 {
+  color: #a9d3c9;
+}
+.card p {
+  color: #6c6e72;
+}
+.card:hover {
+  filter: drop-shadow(0 0 1em #a9d3c9);
+}
+.btn-vermas {
+  background-color: #a9d3c9;
+  color: white;
+}
+
+/* ------------------- Tarjeta de Detalle de productos ------------------- */
+.main {
+  width: 70%;
+  justify-content: center;
+  margin: 1em auto;
+}
+.item-detail {
+  background-color: white;
+}
+.item-detail h1 {
+  background-color: white;
+  color: #df9ab3;
+}
+.item-detail p {
+  color: #6c6e72;
+}
+.btn-add-cart {
+  background-color: #df9ab3;
+  border: none;
+  color: white;
+  margin: 10px;
+}
+.btn-add-cart:hover {
+  background-color: white;
+  color: #df9ab3;
+  border: solid 1px #df9ab3;
+}
+.btn-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-count h5 {
+  color: #6c6e72;
+}
+.carousel-control-prev-icon {
+  background-color: #df9ab3;
+  color: #df9ab3;
+  border-radius: 10px;
+}
+.carousel-control-next-icon {
+  background-color: #df9ab3;
+  color: #df9ab3;
+  border-radius: 10px;
+}
+
+/* ------------------- Carrito de compras Offcanvas -------------------*/
+.offcanvas-title {
+  color: #9a97cf;
+  font-style: italic;
+}
+.offcanvas-img {
+  height: 100px;
+  width: 100px;
+}
+.btn-danger {
+  background-color: #9a97cf;
+  border: none;
+}
+.btn-delete-cart {
+  background-color: #ffc89e;
+  color: white;
+  border: none;
+}
+.btn-continue {
+  background-color: #9a97cf;
+  color: white;
+  border: none;
+}
+
+/* ------------------- CheckOut ------------------- */
+.form {
+  padding-left: 5%;
+}
+.form-label {
+  color: #6c6e72;
+}
+.form-w {
+  margin: 0;
+  padding: 0;
+}
+.card-resume h2 {
+  color: #df9ab3;
+  padding-top: 5%;
+}
+.card-resume h3 {
+  color: #a9d3c9;
+}
+.card-resume h6 {
+  color: #6c6e72;
+}
+.btn-fin {
+  background-color: #9a97cf;
+  color: white;
+}
+.btn-fin:hover {
+  border: solid 1px #9a97cf;
+  color: #9a97cf;
+}
+/* ------------------- Footer ------------------- */
+.footer {
+  background-color: #f3b5ba;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.nav-footer {
+  padding-top: 5px;
+}
+.nav-footer ul {
+  list-style: none;
+  justify-content: center;
+  text-align: center;
+}
+.nav-footer li {
+  margin: 10px;
+  display: inline;
+}
+.info-inf {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-inf-izq {
+  padding: 10px;
+}
+.info-inf-der li {
+  list-style: none;
+  display: inline;
+}
+.info-inf-der img {
+  width: 30px;
+}
+.contacto ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: center;
+}
+.contacto li img {
+  width: 30px;
+}
+
+/* ------------------- Media ------------------- */
+@media (max-width: 1000px) {
+  .main {
+    width: 98%;
+  }
+  .navbar {
+    width: 98%;
+  }
+}
+/* 
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+ */
