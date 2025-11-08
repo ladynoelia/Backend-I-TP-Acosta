@@ -1,0 +1,79 @@
+<div>
+  <h1>Base de datos de productos</h1>
+  <div>
+    <form
+      id="addNewProduct"
+      action="http://localhost:8080/api/products"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input
+        type="text"
+        name="title"
+        placeholder="Nombre del producto"
+        id="pTitle"
+        required
+      />
+      <input
+        type="text"
+        name="description"
+        placeholder="Descripción"
+        id="pDescription"
+        required
+      />
+      <input type="text" name="code" placeholder="Código" id="pCode" required />
+      <input
+        type="number"
+        name="price"
+        placeholder="Precio"
+        id="pPrice"
+        required
+      />
+      <input
+        type="text"
+        name="status"
+        placeholder="Estatus"
+        id="pStatus"
+        required
+      />
+      <input
+        type="number"
+        name="stock"
+        placeholder="Cantidad"
+        id="pStock"
+        required
+      />
+      <input
+        type="text"
+        name="category"
+        placeholder="Categoria"
+        id="pCategory"
+        required
+      />
+      <input type="file" name="file" id="pFile" required />
+      <button type="submit">Agregar producto</button>
+    </form>
+  </div>
+  <div id="productsBox"></div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+{{! <script src="/public/scripts/realTimeProducts-script.js"></script> }}
+<script>
+  const socket = io(); socket.on("Products data", (products) => {
+  console.log("Products payload:", products); console.log("Tipo:", typeof
+  products); console.log("Es array?:", Array.isArray(products)); const
+  productsBox = document.getElementById("productsBox"); productsBox.innerHTML =
+  ""; products.forEach((data) => { productsBox.innerHTML += ` <div> <img
+  src="${data.thumbnail}" alt="${data.title}"/> <h2>${data.title}</h2>
+  <h3>Precio: $${data.price}</h3> <h3>Categoria: ${data.category}</h3>
+  <h3>Descripción: ${data.description}</h3> <h3>Stock: ${data.stock}</h3>
+  <button class="delete-btn" id= "${data.id}">Eliminar</button> </div> `; });
+  }); //const formNewProduct = document.getElementById("addNewProduct");
+  //formNewProduct.addEventListener("submit", (e) => { e.preventDefault(); const
+  //newProduct = { title: e.target.title.value, description:
+  //e.target.description.value, code: e.target.code.value, price:
+  //Number(e.target.price.value), status: e.target.status.value, stock:
+  //Number(e.target.stock.value), category: e.target.category.value, thumbnail:
+  //e.target.file.value, }; socket.emit("New Product", newProduct); });
+
+</script>

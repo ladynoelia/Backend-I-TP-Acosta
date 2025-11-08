@@ -8,11 +8,7 @@
     "status": false,
     "stock": 9,
     "category": "Sekiguchi Pokemon",
-    "thumbnail": [
-      "./public/images/products/pokemon/001-1.png",
-      "./public/images/products/pokemon/001-2.png",
-      "./public/images/products/pokemon/001-3.png"
-    ]
+    "thumbnail": "./images/products/001-1.png"
   },
   {
     "id": "5a2d7fc4-7f8e-483c-9976-25baeb47a378",
@@ -30,11 +26,7 @@
     "status": true,
     "stock": 6,
     "category": "Sekiguchi Pokemon",
-    "thumbnail": [
-      "./public/images/products/pokemon/004-1.png",
-      "./public/images/products/pokemon/004-2.jpg",
-      "./public/images/products/pokemon/004-3.jpg"
-    ]
+    "thumbnail": "./images/products/004-1.png"
   },
   {
     "id": "8f803411-3884-4013-ad14-2e3d4b9dc54f",
@@ -45,25 +37,72 @@
     "status": true,
     "stock": 20,
     "category": "Sekiguchi Pokemon",
-    "thumbnail": [
-      "./public/images/products/pokemon/007-1.jpeg",
-      "./public/images/products/pokemon/007-2.jpg",
-      "./public/images/products/pokemon/007-3.jpg"
-    ]
+    "thumbnail": "./images/products/007-1.jpeg"
   },
   {
-    "id": "751801ab-1218-4ec9-ba9f-8c97b0b86c39",
-    "title": "Zeniganes",
-    "description": "Aprox. Size: L: 15.24 cm, A: 10.16 cm, H: 17.80 cm",
-    "code": "",
-    "price": 4000,
-    "status": true,
-    "stock": 20,
-    "category": "Sekiguchi Pokemon",
-    "thumbnail": [
-      "./public/images/products/pokemon/007-1.jpeg",
-      "./public/images/products/pokemon/007-2.jpg",
-      "./public/images/products/pokemon/007-3.jpg"
-    ]
+    "id": "d42d2c32-d1fc-4edf-a04c-0d0a8e54f8d4",
+    "title": "aa",
+    "description": "aaaaa",
+    "code": "sdf334",
+    "price": "1800",
+    "status": "true",
+    "stock": "2",
+    "category": "asddff",
+    "thumbnail": ""
+  },
+  {
+    "id": "3618a31d-39e3-4c1a-8171-2f19b687dd85",
+    "title": "Candela",
+    "description": "preciosa",
+    "code": "sdf334",
+    "price": "12342343554",
+    "status": "true",
+    "stock": "1",
+    "category": "asddff",
+    "thumbnail": "./images/products/1761666946494-WhatsApp Image 2025-06-09 at 5.32.17 PM (1).jpeg"
+  },
+  {
+    "id": "aeb195ac-0893-433d-93ac-db295de35026",
+    "title": "Zubora Yoga",
+    "description": "Libro",
+    "code": "123dsa",
+    "price": "1520",
+    "status": "true",
+    "stock": "5",
+    "category": "Libros",
+    "thumbnail": "./images/products/1761681188562-Genki na hetare.jpg"
+  },
+  {
+    "id": "b234d5cb-f344-465e-92e3-145527fa366e",
+    "title": "Mamá",
+    "description": "Zubora",
+    "code": "123dsaw",
+    "price": "123400",
+    "status": "true",
+    "stock": "1",
+    "category": "Unknown",
+    "thumbnail": "./images/products/1762551793476-asd.webp"
+  },
+  {
+    "id": "b4abf774-d0d5-464f-b5ed-c27e1caa4b42",
+    "title": "lala",
+    "description": "ASDF",
+    "code": "123dsaw",
+    "price": "8000",
+    "status": "true",
+    "stock": "3",
+    "category": "Libros",
+    "thumbnail": "./images/products/1762557485674-WhatsApp Image 2025-06-09 at 5.32.17 PM (1).jpeg"
+  },
+  {
+    "id": "e51482b2-99f6-4221-a3f2-6c5ba65ba1f7",
+    "title": "sadfsadf",
+    "description": "aaaaa",
+    "code": "dfg",
+    "price": "2345",
+    "status": "true",
+    "stock": "2",
+    "category": "dg",
+    "thumbnail": "./images/products/1762614623509-371823092_682181677293997_8267550480421194539_n.jpg"
   }
 ]

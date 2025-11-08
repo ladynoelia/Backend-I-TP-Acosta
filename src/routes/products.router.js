@@ -1,5 +1,6 @@
 import express from "express";
 import ProductManager from "../managers/productManager.js";
+import uploader from "../utils/uploader.js";
 
 const productsRouter = express.Router();
 const productManager = new ProductManager("./src/db/products.json");
@@ -15,7 +16,7 @@ productsRouter.get("/", async (req, res) => {
 });
 
 // Agregar un producto
-productsRouter.post("/", async (req, res) => {
+/* productsRouter.post("/", async (req, res) => {
   try {
     const newProduct = req.body;
     if (!newProduct || Object.keys(newProduct).length === 0) {
@@ -26,6 +27,39 @@ productsRouter.post("/", async (req, res) => {
     }
     const products = await productManager.addProduct(newProduct);
     res.status(201).json({ message: "Producto agregado", products });
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+}); */
+productsRouter.post("/", uploader.single("file"), async (req, res) => {
+  try {
+    if (!req.file) {
+      return res
+        .status(401)
+        .json({ message: "Hay que agregar al menos una imagen del producto" });
+    }
+    const title = req.body.title;
+    const description = req.body.description;
+    const code = req.body.code;
+    const price = req.body.price;
+    const status = req.body.status;
+    const stock = req.body.stock;
+    const category = req.body.category;
+    const thumbnail = "./images/products/" + req.file.filename;
+
+    await productManager.addProduct({
+      title,
+      description,
+      code,
+      price,
+      status,
+      stock,
+      category,
+      thumbnail,
+    });
+    const updatedProducts = await productManager.getProducts();
+    req.io.emit("Products data", updatedProducts);
+    res.redirect("/realtimeproducts");
   } catch (error) {
     res.status(400).json({ message: error.message });
   }
