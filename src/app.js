@@ -10,6 +10,14 @@ import ProductManager from "./managers/productManager.js";
 const app = express();
 const server = http.createServer(app);
 
+// ----------- Websocket -----------
+export const io = new Server(server);
+const productManager = new ProductManager("./src/db/products.json");
+app.use((req, res, next) => {
+  req.io = io;
+  next();
+});
+
 //Middlewares
 app.use(express.json());
 app.use(express.static("public"));
@@ -27,19 +35,11 @@ app.use("/api/products", productsRouter);
 // ----------- CartManager -----------
 app.use("/api/carts", cartsRouter);
 
-// ----------- Websocket -----------
-const io = new Server(server);
-const productManager = new ProductManager("./src/db/products.json");
-app.use((req, res, next) => {
-  req.io = io;
-  next();
-});
-
 io.on("connection", async (socket) => {
   console.log("conectados!" + socket.id);
   //Manda los productos en la base de datos
   const productsData = await productManager.getProducts();
-  io.emit("Products data", productsData);
+  socket.emit("Products data", productsData);
 });
 // node src/app.js
 server.listen(8080, () => {

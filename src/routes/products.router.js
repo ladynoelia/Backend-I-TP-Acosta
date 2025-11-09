@@ -110,6 +110,8 @@ productsRouter.delete("/:pid", async (req, res) => {
           "El producto que desea eliminar no se encuentra en la base de datos",
       });
     }
+    const updatedProducts = await productManager.getProducts();
+    req.io.emit("Products data", updatedProducts);
     res.status(200).json({ message: "Producto eliminado", products });
   } catch (error) {
     res.status(500).json({ message: error.message });

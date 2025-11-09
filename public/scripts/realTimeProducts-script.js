@@ -1,32 +1,57 @@
 const socket = io();
 
-socket.on("Products data", (products) => {
-  /* console.log("Products payload:", products);
-  console.log("Tipo:", typeof products);
-  console.log("Es array?:", Array.isArray(products)); */
+//Elementos del html ---------------------------------------------
+const productsBox = document.getElementById("productsBox");
+const formNewProduct = document.getElementById("addNewProduct");
 
-  const productsBox = document.getElementById("productsBox");
+//Muestra los productos en la base de datos ---------------------------------------------
+socket.on("Products data", (products) => {
+  renderProducts(products);
+});
+
+function renderProducts(products) {
   productsBox.innerHTML = "";
-  products.forEach((data) => {
+  products.forEach((product) => {
     productsBox.innerHTML += `
         <div class="col">
           <div class="card h-100" card>
-            <img src="${data.thumbnail}" class="card-img-top" alt="${data.title}"/>
+            <img src="${product.thumbnail}" class="card-img-top" alt="${product.title}"/>
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title">${data.title}</h5>
-              <p class="card-text">Precio: $${data.price}</p>
-              <p class="card-text">Categoría: ${data.category}</p>
-              <p class="card-text">Descripción: ${data.description}</p>
-              <p class="card-text">Stock: ${data.stock}</p>
-              <button class=" btn btn-vermas" id= "${data.id}">Eliminar</button>
+              <h5 class="card-title">${product.title}</h5>
+              <p class="card-text">Precio: $${product.price}</p>
+              <p class="card-text">Categoría: ${product.category}</p>
+              <p class="card-text">Descripción: ${product.description}</p>
+              <p class="card-text">Stock: ${product.stock}</p>
+              <button class=" btn btn-delete" data-id="${product.id}">Eliminar</button>
             </div>
           </div>
         </div>
     `;
   });
-});
+  deleteBtns();
+}
+//Botón Eliminar en las cards de productos ---------------------------------------------
+function deleteBtns() {
+  const deleteBtns = document.querySelectorAll(".btn-delete");
+  deleteBtns.forEach((btn) => {
+    btn.addEventListener("click", async (event) => {
+      const idProduct = event.target.dataset.id;
+      try {
+        const response = await fetch(`/api/products/${idProduct}`, {
+          method: "DELETE",
+        });
+        console.log("Producto eliminado correctamente");
+        if (!response.ok) {
+          console.error("Error al intentar borrar el producto:", error);
+        }
+      } catch (error) {
+        console.error("Error al enviar:", error);
+      }
+    });
+  });
+}
 
-const formNewProduct = document.getElementById("addNewProduct");
+//Formulario para agregar productos ---------------------------------------------
 formNewProduct.addEventListener("submit", async (e) => {
   e.preventDefault();
   const formData = new FormData(formNewProduct);
@@ -40,6 +65,6 @@ formNewProduct.addEventListener("submit", async (e) => {
       console.log("✅", result.message);
     }
   } catch (error) {
-    console.error("❌ Error al enviar:", error);
+    console.error("Error al enviar:", error);
   }
 });
