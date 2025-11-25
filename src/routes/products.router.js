@@ -1,67 +1,47 @@
 import express from "express";
-import ProductManager from "../managers/productManager.js";
-import uploader from "../utils/uploader.js";
+import Product from "../models/product.model.js";
 
 const productsRouter = express.Router();
-const productManager = new ProductManager("./src/db/products.json");
 
 // Obtener todos los productos
 productsRouter.get("/", async (req, res) => {
   try {
-    const products = await productManager.getProducts();
-    res.status(200).json({ message: "Lista de productos", products });
+    const { limit = 10, page = 1 } = req.query;
+    const data = await Product.paginate({}, { limit, page });
+    const products = data.docs;
+    delete data.docs;
+
+    res
+      .status(200)
+      .json({ message: "Lista de productos", payload: products, ...data });
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    res.status(500).json({
+      status: "error",
+      message: "Error al mostrar la lista de productos",
+    });
   }
 });
 
 // Agregar un producto
-/* productsRouter.post("/", async (req, res) => {
+productsRouter.post("/", async (req, res) => {
   try {
     const newProduct = req.body;
+    console.log("Producto recibido:", newProduct);
     if (!newProduct || Object.keys(newProduct).length === 0) {
       return res.status(400).json({
         message:
           "Se necesita información para agregar un producto a la base de datos",
       });
     }
-    const products = await productManager.addProduct(newProduct);
-    res.status(201).json({ message: "Producto agregado", products });
+    const product = new Product(newProduct);
+    await product.save();
+    res.status(201).json({ message: "Producto agregado", product });
   } catch (error) {
-    res.status(400).json({ message: error.message });
-  }
-}); */
-productsRouter.post("/", uploader.single("file"), async (req, res) => {
-  try {
-    if (!req.file) {
-      return res
-        .status(401)
-        .json({ message: "Hay que agregar al menos una imagen del producto" });
-    }
-    const title = req.body.title;
-    const description = req.body.description;
-    const code = req.body.code;
-    const price = req.body.price;
-    const status = req.body.status;
-    const stock = req.body.stock;
-    const category = req.body.category;
-    const thumbnail = "./images/products/" + req.file.filename;
-
-    await productManager.addProduct({
-      title,
-      description,
-      code,
-      price,
-      status,
-      stock,
-      category,
-      thumbnail,
+    res.status(400).json({
+      status: "error",
+      message: "Error al agregar el producto",
+      error,
     });
-    const updatedProducts = await productManager.getProducts();
-    req.io.emit("Products data", updatedProducts);
-    res.status(201).json({ message: "Producto agregado correctamente" });
-  } catch (error) {
-    res.status(400).json({ message: error.message });
   }
 });
 
@@ -69,7 +49,7 @@ productsRouter.post("/", uploader.single("file"), async (req, res) => {
 productsRouter.get("/:pid", async (req, res) => {
   try {
     const pid = req.params.pid;
-    const product = await productManager.getProductById(pid);
+    const product = await Product.findById(pid);
     if (!product) {
       return res
         .status(404)
@@ -77,7 +57,9 @@ productsRouter.get("/:pid", async (req, res) => {
     }
     res.status(200).json({ message: "Producto encontrado:", product });
   } catch (error) {
-    res.status(400).json({ message: error.message });
+    res
+      .status(400)
+      .json({ status: "error", message: "Error al buscar el producto" });
   }
 });
 
@@ -86,16 +68,23 @@ productsRouter.put("/:pid", async (req, res) => {
   try {
     const pid = req.params.pid;
     const updates = req.body;
-    const products = await productManager.updateProduct(pid, updates);
-    if (!products || Object.keys(updates).length === 0) {
+    const updatedProduct = await Product.findByIdAndUpdate(pid, updates, {
+      new: true,
+      runValidators: true,
+    });
+    if (!updatedProduct || Object.keys(updates).length === 0) {
       return res.status(401).json({
         message:
           "Los datos del producto no se pudieron actualuzar. Revisar Id y/o updates.",
       });
     }
-    res.status(200).json({ message: "Producto actualizado", products });
+    res
+      .status(200)
+      .json({ message: "Producto actualizado", payload: updatedProduct });
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    res
+      .status(500)
+      .json({ status: "error", message: "Error al actualizar el producto" });
   }
 });
 
@@ -103,18 +92,18 @@ productsRouter.put("/:pid", async (req, res) => {
 productsRouter.delete("/:pid", async (req, res) => {
   try {
     const pid = req.params.pid;
-    const products = await productManager.deleteProductById(pid);
-    if (!products) {
+    const deletedProduct = await Product.findByIdAndDelete(pid);
+    if (!deletedProduct) {
       return res.status(404).json({
         message:
           "El producto que desea eliminar no se encuentra en la base de datos",
       });
     }
-    const updatedProducts = await productManager.getProducts();
-    req.io.emit("Products data", updatedProducts);
-    res.status(200).json({ message: "Producto eliminado", products });
+    res.status(200).json({ message: "Producto eliminado", deletedProduct });
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    res
+      .status(500)
+      .json({ status: "error", message: "Error al borrar el producto" });
   }
 });
 

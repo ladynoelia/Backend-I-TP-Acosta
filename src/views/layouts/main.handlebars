@@ -2,13 +2,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>FuwaFuwa Paradise 2.0</title>
   </head>
   <body>
@@ -26,7 +31,7 @@
           </a>
           <Link to="/">FuwaFawa</Link>
           {{!  ---------- Desplegable de Productos ---------  }}
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          {{! <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -55,12 +60,88 @@
                 </li>
               </ul>
             </li>
-          </ul>
-          {{!  ---------- Carrito ---------  }}
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-            </li>
-          </ul>
+          </ul> }}
+          {{!  ---------- Modal ---------  }}
+          <div
+            class="modal fade"
+            id="exampleModalToggle"
+            aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1
+                    class="modal-title fs-5"
+                    id="exampleModalToggleLabel"
+                  >Ingrese el ID de su carrito</h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <input type="text" name="cid" id="cid" />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    id="searchId"
+                    class="btn btn-continue"
+                    data-bs-target="#exampleModalToggle2"
+                    data-bs-toggle="modal"
+                  >Continuar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="exampleModalToggle2"
+            aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1"
+          >
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1
+                    class="modal-title fs-5"
+                    id="exampleModalToggleLabel2"
+                  >Productos en el Carrito</h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Hide this modal and show the first with the button below.
+                </div>
+                <div class="modal-footer">
+                  <button
+                    class="btn btn-primary"
+                    data-bs-target="#exampleModalToggle"
+                    data-bs-toggle="modal"
+                  >Volver</button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{!  ---------- Botón Carrito --------- }}
+          <button
+            class="btn btn-primary"
+            data-bs-target="#exampleModalToggle"
+            data-bs-toggle="modal"
+          >Mi Carrito</button>
         </div>
       </nav>
 
@@ -126,10 +207,13 @@
         </div>
       </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="/scripts/main.cart.js"></script>
   </body>
 </html>

@@ -3,9 +3,8 @@
     "id": "1",
     "title": "Fushigidane",
     "description": "Aprox. Size: D: 20 cm, A: 16 cm, H: 16 cm",
-    "code": "",
+    "code": "001",
     "price": 5000,
-    "status": false,
     "stock": 9,
     "category": "Sekiguchi Pokemon",
     "thumbnail": "./images/products/001-1.png"
@@ -14,9 +13,8 @@
     "id": "4bca6f61-d1ec-4c51-9e94-dbc6312861f1",
     "title": "Hitokage",
     "description": "Aprox. Size: L: 14 cm, A: 12.7 cm, H: 17.80 cm",
-    "code": "",
+    "code": "004",
     "price": 4000,
-    "status": true,
     "stock": 6,
     "category": "Sekiguchi Pokemon",
     "thumbnail": "./images/products/004-1.png"
@@ -25,9 +23,8 @@
     "id": "8f803411-3884-4013-ad14-2e3d4b9dc54f",
     "title": "Zenigane",
     "description": "Aprox. Size: L: 15.24 cm, A: 10.16 cm, H: 17.80 cm",
-    "code": "",
+    "code": "007",
     "price": 4000,
-    "status": true,
     "stock": 20,
     "category": "Sekiguchi Pokemon",
     "thumbnail": "./images/products/007-1.jpeg"
@@ -36,44 +33,559 @@
     "id": "31fca2bc-b1f2-41db-9e10-1e69341572b2",
     "title": "Pikachu",
     "description": "Aprox. Size: L: 17.50 cm, A: 10.50 cm, H: 22.50 cm",
-    "code": "25",
-    "price": "4000",
-    "status": "true",
-    "stock": "4",
+    "code": "025",
+    "price": 4000,
+    "stock": 4,
     "category": "Sekiguchi Pokemon",
-    "thumbnail": "./images/products/1762624601294-025-2.jpg"
+    "thumbnail": [
+      "./images/products/025-1.jpg",
+      "./images/products/025-2.jpg",
+      "./images/products/025-3.jpg"
+    ]
+  },
+  {
+    "id": "31fca2bc-b1f2-41db-9e10-1e69341572b2",
+    "title": "Pikachu",
+    "description": "Aprox. Size: L: 18 cm, A: 23 cm, H: 23 cm",
+    "code": "026",
+    "price": 4000,
+    "stock": 4,
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": [
+      "./images/products/026-1.jpg",
+      "./images/products/026-2.jpg",
+      "./images/products/026-3.jpg"
+    ]
   },
   {
     "id": "fb23b7d1-4659-4783-b70f-1ee6c0a53eec",
     "title": "Nyaasu",
     "description": "Aprox. Size: L: 12 cm, A: 14 cm, H: 20 cm",
-    "code": "52",
-    "price": "4000",
-    "status": "true",
-    "stock": "5",
+    "code": "052",
+    "price": 4000,
+    "stock": 5,
     "category": "Sekiguchi Pokemon",
-    "thumbnail": "./images/products/1762624703720-052-1.jpg"
+    "thumbnail": [
+      "./images/products/052-1.jpg",
+      "./images/products/052-2.jpg",
+      "./images/products/052-3.jpg"
+    ]
   },
   {
     "id": "dba21236-8db9-45a0-9a93-33f14e965efe",
     "title": "Koduck",
     "description": "Aprox. Size: L: 18 cm, A: 20 cm, H: 19 cm",
-    "code": "54",
-    "price": "5000",
-    "status": "true",
-    "stock": "5",
+    "code": "054",
+    "price": 5000,
+    "stock": 5,
     "category": "Sekiguchi Pokemon",
-    "thumbnail": "./images/products/1762626096653-054-1.jpg"
+    "thumbnail": [
+      "./images/products/054-1.jpg",
+      "./images/products/054-2.jpg",
+      "./images/products/054-3.jpg"
+    ]
   },
   {
     "id": "402307cc-db3e-4c31-972f-4b5286bb461f",
     "title": "Gengah",
     "description": "Aprox. Size: H: 19.05 cm",
-    "code": "94",
-    "price": "4250",
-    "status": "true",
-    "stock": "10",
+    "code": "094",
+    "price": 4250,
+    "stock": 10,
     "category": "Sekiguchi Pokemon",
-    "thumbnail": "./images/products/1762626174301-094-1.jpg"
+    "thumbnail": [
+      "./images/products/094-1.jpg",
+      "./images/products/094-2.jpg",
+      "./images/products/094-3.jpg"
+    ]
+  },
+  {
+    "id": 129,
+    "title": "Koikingu",
+    "description": "Aprox. Size: D: 26 cm, A: 12 cm, H: 21 cm",
+    "code": "129",
+    "price": 3500,
+    "stock": 20,
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": [
+      "./images/products/129-1.png",
+      "./images/products/129-2.jpg",
+      "./images/products/129-3.jpg"
+    ]
+  },
+  {
+    "id": 133,
+    "title": "Iibui",
+    "description": "Aprox. Size: H: 22.90 cm",
+    "code": "133",
+    "price": 5000,
+    "stock": 30,
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": [
+      "./images/products/133-1.jpg",
+      "./images/products/133-2.jpg",
+      "./images/products/133-3.jpg"
+    ]
+  },
+  {
+    "id": 151,
+    "title": "Myuu",
+    "description": "Aprox. Size: H: 15.24 cm",
+    "code": "151",
+    "price": 5000,
+    "stock": 30,
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": [
+      "./images/products/151-1.jpg",
+      "./images/products/151-2.jpg",
+      "./images/products/151-3.jpg"
+    ]
+  },
+  {
+    "id": 216,
+    "title": "Himeguma",
+    "description": "Aprox. Size: L: 12cm, A: 20 cm, H: 20 cm",
+    "code": "216",
+    "price": 4000,
+    "stock": 30,
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": [
+      "./images/products/216-1.jpg",
+      "./images/products/216-2.jpg",
+      "./images/products/216-3.jpg"
+    ]
+  },
+  {
+    "id": 722,
+    "title": "Mokuroh",
+    "description": "Aprox. Size: H: 22 cm",
+    "code": "722",
+    "price": 5300,
+    "stock": 30,
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": [
+      "./images/products/722-1.jpg",
+      "./images/products/722-2.jpg",
+      "./images/products/722-3.jpg"
+    ]
+  },
+  {
+    "id": 778,
+    "title": "Mimikkyu",
+    "description": "Aprox. Size: L: 18, A: 21, H: 23 cm",
+    "code": "778",
+    "price": 5300,
+    "stock": 30,
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": [
+      "./images/products/778-1.jpg",
+      "./images/products/778-2.jpg",
+      "./images/products/778-3.jpg"
+    ]
+  },
+  {
+    "id": 810,
+    "title": "Sarunori",
+    "description": "Aprox. Size: L: 18 cm, A: 18 cm, H: 24.50 cm",
+    "code": "810",
+    "price": 4900,
+    "stock": 30,
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": [
+      "./images/products/810-1.jpg",
+      "./images/products/810-2.jpg",
+      "./images/products/810-3.jpg"
+    ]
+  },
+  {
+    "id": 813,
+    "title": "Hibanii",
+    "description": "Aprox. Size: L: 17.50 cm, A: 14 cm, H: 28 cm",
+    "code": "813",
+    "price": 4300,
+    "stock": 30,
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": [
+      "./images/products/813-1.jpg",
+      "./images/products/813-2.jpg",
+      "./images/products/813-3.jpg"
+    ]
+  },
+  {
+    "id": 816,
+    "title": "Messon",
+    "description": "Aprox. Size: L: 16 cm, A: 14 cm, H: 28.50 cm",
+    "code": "816",
+    "price": 4300,
+    "stock": 30,
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": [
+      "./images/products/816-1.jpg",
+      "./images/products/816-2.jpg",
+      "./images/products/816-3.jpg"
+    ]
+  },
+  {
+    "id": 906,
+    "title": "Nyaoha",
+    "description": "Aprox. Size: L: 21 cm, A: 17 cm, H: 17.50 cm",
+    "code": "906",
+    "price": 5000,
+    "stock": 30,
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": [
+      "./images/products/906-1.jpg",
+      "./images/products/906-2.jpg",
+      "./images/products/906-3.jpg"
+    ]
+  },
+  {
+    "id": 909,
+    "title": "Hogeta",
+    "description": "Aprox. Size: H: 22.80 cm",
+    "code": "909",
+    "price": 4200,
+    "stock": 30,
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": [
+      "./images/products/909-1.jpg",
+      "./images/products/909-2.jpg",
+      "./images/products/909-3.jpg"
+    ]
+  },
+  {
+    "id": 912,
+    "title": "Kuwassu",
+    "description": "Aprox. Size: H: 17.80 cm",
+    "code": "912",
+    "price": 4300,
+    "stock": 10,
+    "category": "Sekiguchi Pokemon",
+    "thumbnail": [
+      "./images/products/912-1.jpg",
+      "./images/products/912-2.jpg",
+      "./images/products/912-3.jpg"
+    ]
+  },
+  {
+    "id": 2001,
+    "title": "Agumon",
+    "description": "Aprox. Size: 33 x 30 x 25 cm, Peso: 680g",
+    "code": "DA001",
+    "price": 6800,
+    "stock": 3,
+    "category": "Digimon Adventure Stuffed Collection",
+    "thumbnail": [
+      "./images/products/2001-1.jpg",
+      "./images/products/2001-2.jpg",
+      "./images/products/2001-1.jpg"
+    ]
+  },
+  {
+    "id": 2002,
+    "title": "Patamon",
+    "description": "Aprox. Size: 32.20 x 29.40 x 25.40 cm, Peso: 1001g",
+    "code": "DA002",
+    "price": 6550,
+    "stock": 5,
+    "category": "Digimon Adventure Stuffed Collection",
+    "thumbnail": [
+      "./images/products/2002-1.jpg",
+      "./images/products/2002-2.jpg",
+      "./images/products/2002-1.jpg"
+    ]
+  },
+  {
+    "id": 2009,
+    "title": "Koromon",
+    "description": "Aprox. Size: H: 30 cm",
+    "code": "DA003",
+    "price": 5000,
+    "stock": 3,
+    "category": "Digimon Adventure Stuffed Collection",
+    "thumbnail": [
+      "./images/products/2009-1.jpg",
+      "./images/products/2009-2.jpg",
+      "./images/products/2009-3.png"
+    ]
+  },
+  {
+    "id": 2010,
+    "title": "Mochimon",
+    "description": "Aprox. Size: H: 30 cm",
+    "code": "DA004",
+    "price": 5000,
+    "stock": 3,
+    "category": "Digimon Adventure Stuffed Collection",
+    "thumbnail": [
+      "./images/products/2010-1.jpg",
+      "./images/products/2010-2.jpg",
+      "./images/products/2010-3.jpg"
+    ]
+  },
+  {
+    "id": 2011,
+    "title": "Wormmon",
+    "description": "Aprox. Size: H: 40 cm",
+    "code": "DA005",
+    "price": 6500,
+    "stock": 7,
+    "category": "Digimon Adventure Stuffed Collection",
+    "thumbnail": [
+      "./images/products/2011-1.jpg",
+      "./images/products/2011-2.jpg",
+      "./images/products/2011-3.jpg"
+    ]
+  },
+  {
+    "id": 2021,
+    "title": "Agumon",
+    "description": "Fabricante: San-ei. Material: Poliéster. Tamaño: W12xD14xH16 cm. Fecha de lanzamiento: 2019/03.",
+    "code": "DAP001",
+    "price": 6605,
+    "stock": 7,
+    "category": "Digimon Adventure: Plush",
+    "thumbnail": [
+      "./images/products/2021-1.jpg",
+      "./images/products/2021-2.jpg",
+      "./images/products/2021-3.jpg"
+    ]
+  },
+  {
+    "id": 2022,
+    "title": "Gabumon",
+    "description": "Fabricante: San-ei. Material: Poliéster. Tamaño: W12xD14xH16 cm. Fecha de lanzamiento: 2019/03.",
+    "code": "DAP002",
+    "price": 10200,
+    "stock": 10,
+    "category": "Digimon Adventure: Plush",
+    "thumbnail": [
+      "./images/products/2022-1.jpg",
+      "./images/products/2022-2.jpg",
+      "./images/products/2022-3.jpg"
+    ]
+  },
+  {
+    "id": 2023,
+    "title": "Biyomon",
+    "description": "Fabricante: San-ei. Material: Poliéster. Tamaño: W12xD12xH20 cm. Fecha de lanzamiento: 2018/11.",
+    "code": "DAP003",
+    "price": 5807,
+    "stock": 8,
+    "category": "Digimon Adventure: Plush",
+    "thumbnail": [
+      "./images/products/2023-1.jpg",
+      "./images/products/2023-2.jpg",
+      "./images/products/2023-3.jpg"
+    ]
+  },
+  {
+    "id": 2024,
+    "title": "Palmon",
+    "description": "Fabricante: San-ei. Material: Poliéster. Tamaño: W18xD12xH21 cm. Fecha de lanzamiento: 2019/03.",
+    "code": "DAP004",
+    "price": 6030,
+    "stock": 10,
+    "category": "Digimon Adventure: Plush",
+    "thumbnail": [
+      "./images/products/2024-1.jpg",
+      "./images/products/2024-2.jpg",
+      "./images/products/2024-3.jpg"
+    ]
+  },
+  {
+    "id": 2025,
+    "title": "Gomamon",
+    "description": "Fabricante: San-ei. Material: Poliéster. Tamaño: W14xD17xH17 cm. Fecha de lanzamiento: 2019/03.",
+    "code": "DAP005",
+    "price": 8296,
+    "stock": 10,
+    "category": "Digimon Adventure: Plush",
+    "thumbnail": [
+      "./images/products/2025-1.jpg",
+      "./images/products/2025-2.jpg",
+      "./images/products/2025-3.jpg"
+    ]
+  },
+  {
+    "id": 2026,
+    "title": "Tentomon",
+    "description": "Fabricante: San-ei. Material: Poliéster. Tamaño: W14xD17xH14 cm. Fecha de lanzamiento: 2022.",
+    "code": "DAP006",
+    "price": 6711,
+    "stock": 10,
+    "category": "Digimon Adventure: Plush",
+    "thumbnail": [
+      "./images/products/2026-1.jpg",
+      "./images/products/2026-2.jpg",
+      "./images/products/2026-3.jpg"
+    ]
+  },
+  {
+    "id": 2027,
+    "title": "Patamon",
+    "description": "Fabricante: San-ei. Material: Poliéster. Tamaño: W9xD14xH13 cm. Fecha de lanzamiento: 2019/03.",
+    "code": "DAP007",
+    "price": 3456,
+    "stock": 10,
+    "category": "Digimon Adventure: Plush",
+    "thumbnail": [
+      "./images/products/2027-1.jpg",
+      "./images/products/2027-2.jpg",
+      "./images/products/2027-3.jpg"
+    ]
+  },
+  {
+    "id": 2028,
+    "title": "Tailmon",
+    "description": "Fabricante: San-ei. Material: Poliéster. Tamaño: W15xD12xH18 cm. Fecha de lanzamiento: 2019/03.",
+    "code": "DAP008",
+    "price": 8264,
+    "stock": 10,
+    "category": "Digimon Adventure: Plush",
+    "thumbnail": [
+      "./images/products/2028-1.jpg",
+      "./images/products/2028-2.jpg",
+      "./images/products/2028-3.jpg"
+    ]
+  },
+  {
+    "id": 2029,
+    "title": "Wizardmon",
+    "description": "Fabricante: San-ei. Material: Poliéster. Tamaño: W13xD14xH24 cm. Fecha de lanzamiento: 2020/02.",
+    "code": "DAP009",
+    "price": 5520,
+    "stock": 10,
+    "category": "Digimon Adventure: Plush",
+    "thumbnail": [
+      "./images/products/2029-1.jpg",
+      "./images/products/2029-2.jpg",
+      "./images/products/2029-3.jpg"
+    ]
+  },
+  {
+    "id": 2030,
+    "title": "Veemon",
+    "description": "Fabricante: San-ei. Material: Poliéster. Tamaño: W20xD18xH11 cm. Fecha de lanzamiento: 2022/09.",
+    "code": "DAP010",
+    "price": 8264,
+    "stock": 10,
+    "category": "Digimon Adventure: Plush",
+    "thumbnail": [
+      "./images/products/2030-1.jpg",
+      "./images/products/2030-2.jpg",
+      "./images/products/2030-3.jpg"
+    ]
+  },
+  {
+    "id": 2031,
+    "title": "Wormmon",
+    "description": "Fabricante: San-ei. Material: Poliéster. Tamaño: W20xD18xH11 cm. Fecha de lanzamiento: 2020/05.",
+    "code": "DAP011",
+    "price": 9646,
+    "stock": 10,
+    "category": "Digimon Adventure: Plush",
+    "thumbnail": [
+      "./images/products/2031-1.jpg",
+      "./images/products/2031-2.jpg",
+      "./images/products/2031-3.jpg"
+    ]
+  },
+  {
+    "id": 2032,
+    "title": "Guilmon",
+    "description": "Fabricante: San-ei. Material: Poliéster. Tamaño: W21xD17xH18 cm. Fecha de lanzamiento: 2020/02.",
+    "code": "DAP012",
+    "price": 11061,
+    "stock": 10,
+    "category": "Digimon Adventure: Plush",
+    "thumbnail": [
+      "./images/products/2032-1.jpg",
+      "./images/products/2032-2.jpg",
+      "./images/products/2032-3.jpg"
+    ]
+  },
+  {
+    "id": 2033,
+    "title": "Renamon",
+    "description": "Fabricante: San-ei. Material: Poliéster. Tamaño: W13xD16xH28.50 cm. Fecha de lanzamiento: 2020.",
+    "code": "DAP013",
+    "price": 5424,
+    "stock": 10,
+    "category": "Digimon Adventure: Plush",
+    "thumbnail": [
+      "./images/products/2033-1.jpg",
+      "./images/products/2033-2.jpg"
+    ]
+  },
+  {
+    "id": 2034,
+    "title": "Terriermon",
+    "description": "Fabricante: San-ei. Material: Poliéster. Tamaño: W20xD16xH5 cm. Fecha de lanzamiento: 2020/02.",
+    "code": "DAP014",
+    "price": 8264,
+    "stock": 10,
+    "category": "Digimon Adventure: Plush",
+    "thumbnail": [
+      "./images/products/2034-1.jpg",
+      "./images/products/2034-2.jpg",
+      "./images/products/2034-3.jpg"
+    ]
+  },
+  {
+    "id": 2035,
+    "title": "Culumon",
+    "description": "Fabricante: San-ei. Material: Poliéster. Tamaño: W20xD16xH8 cm. Fecha de lanzamiento: 2021/07.",
+    "code": "DAP015",
+    "price": 4531,
+    "stock": 10,
+    "category": "Digimon Adventure: Plush",
+    "thumbnail": [
+      "./images/products/2035-1.jpg",
+      "./images/products/2035-2.jpg",
+      "./images/products/2035-3.jpg"
+    ]
+  },
+  {
+    "id": 2036,
+    "title": "Impmon",
+    "description": "Fabricante: San-ei. Material: Poliéster. Tamaño: W18.50xD19xH18 cm. Fecha de lanzamiento: 2021/07.",
+    "code": "DAP016",
+    "price": 8955,
+    "stock": 10,
+    "category": "Digimon Adventure: Plush",
+    "thumbnail": [
+      "./images/products/2036-1.jpg",
+      "./images/products/2036-2.jpg",
+      "./images/products/2036-3.jpg"
+    ]
+  },
+  {
+    "id": 2037,
+    "title": "Lopmon",
+    "description": "Fabricante: San-ei. Material: Poliéster. Tamaño: W27xD20xH14 cm. Fecha de lanzamiento: 2021/07.",
+    "code": "DAP017",
+    "price": 12412,
+    "stock": 10,
+    "category": "Digimon Adventure: Plush",
+    "thumbnail": [
+      "./images/products/2037-1.jpg",
+      "./images/products/2037-2.jpg",
+      "./images/products/2037-3.jpg"
+    ]
+  },
+  {
+    "id": 2038,
+    "title": "Koromon",
+    "description": "Fabricante: San-ei. Material: Poliéster. Tamaño: W11xD10.50xH10 cm. Fecha de lanzamiento: 2022/09.",
+    "code": "DAP018",
+    "price": 3148,
+    "stock": 10,
+    "category": "Digimon Adventure: Plush",
+    "thumbnail": [
+      "./images/products/2038-1.jpg",
+      "./images/products/2038-2.jpg",
+      "./images/products/2038-3.jpg"
+    ]
   }
 ]

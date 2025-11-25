@@ -6,6 +6,10 @@ import viewsRouter from "./routes/views.router.js";
 import productsRouter from "./routes/products.router.js";
 import cartsRouter from "./routes/carts.router.js";
 import ProductManager from "./managers/productManager.js";
+import connectMongoDB from "./config/db.js";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
 const server = http.createServer(app);
@@ -41,7 +45,11 @@ io.on("connection", async (socket) => {
   const productsData = await productManager.getProducts();
   socket.emit("Products data", productsData);
 });
-// node src/app.js
+
+// MongoDB
+connectMongoDB();
+
 server.listen(8080, () => {
   console.log("servidor iniciado! xD");
 });
+// nodemon src/app.js
